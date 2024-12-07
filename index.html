@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+   <style>
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color:aliceblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.c {
+    background: black;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 8px 18px 18px rgba(243, 5, 128, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+    
+
+
+input[type="date"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 4px rgba(184, 150, 173, 0.1);
+}
+
+button {
+    background-color: #c656b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00a7b3;
+}
+
+#currentAge {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+   </style>
+</head>
+
+<body>
+    <div class="c">
+        <header>
+            <h1>AGE CALCULATOR</h1>
+        </header>
+
+        <div>
+            <label>Enter your Date of Birth</label><br>
+            <input id="inputDob"  type="date" />
+        </div>
+        <br />
+
+       
+        <div>
+            <label>Current Date</label><br>
+            <input id="cdate"
+                   type="date" 
+                   value="" />
+        </div>
+        <br />
+
+        <button type="button" 
+                onclick="getDOB()">
+            Calculate
+        </button>
+        <br />
+        <div id="currentAge"></div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
